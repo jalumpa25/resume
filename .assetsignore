@@ -1,0 +1,5 @@
+# Repository files that should not be published with the site
+JD Umpa_v01.docx
+README.md
+.gitignore
+.assetsignore

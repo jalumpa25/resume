@@ -1,0 +1,9 @@
+.wrangler/
+.edge-tmp/
+node_modules/
+preview-*
+shot-*
+print-page-*
+.DS_Store
+Thumbs.db
+desktop.ini
