@@ -16,12 +16,14 @@ A single-page résumé for **Jalaludin (JD) Umpa** — bookkeeper and software d
 
 ```
 index.html          # the entire site (HTML, CSS, JS)
+build.mjs           # copies the site into dist/ for deployment
+_redirects          # keeps legacy repo paths from resolving to old files
 assets/
   portrait.jpg
   favicon.svg
   badges/           # the six badge images
   certs/            # certificate scans (watermarked)
-JD Umpa_v01.docx    # source résumé (not published)
+JD Umpa_v01.docx    # source résumé (never published)
 ```
 
 ## Local preview
@@ -35,13 +37,11 @@ Print the page (Ctrl/Cmd + P) or use the **Print / PDF** button for the A4 layou
 
 ## Deploy
 
-Hosted on Cloudflare Pages (direct upload):
+Hosted on Cloudflare Pages (direct upload). Only the built `dist/` folder is published:
 
 ```bash
-npx wrangler pages deploy . --project-name=jd-resume
+npm run deploy
 ```
-
-Files listed in `.assetsignore` are kept in the repository but excluded from the deployed site.
 
 ## Credential verification
 

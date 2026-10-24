@@ -1,0 +1,11 @@
+{
+  "name": "jd-resume",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Online resume for Jalaludin Umpa",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name=jd-resume --branch=main"
+  }
+}

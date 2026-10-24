@@ -1,6 +1,8 @@
 .wrangler/
 .edge-tmp/
 node_modules/
+dist/
+.cf-*.json
 preview-*
 shot-*
 print-page-*
